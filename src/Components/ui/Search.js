@@ -16,7 +16,7 @@ const Search = ({ Change }) => {
     <>
       <div className="searchBar">
         <input type="text" placeholder='Type to search ...' className="searchBox" value={text} onChange={(e) => onChange(e.target.value)}/>
-        <button type='submit' className='btn btn-primary searchButton' onClick={()=>onChange('')}><img src={searchIcon} alt="Search"/></button>
+        <button type='submit' className='btn btn-primary searchButton' onClick={()=>onChange(text)}><img src={searchIcon} alt="Search"/></button>
       </div>
     </>
   );
